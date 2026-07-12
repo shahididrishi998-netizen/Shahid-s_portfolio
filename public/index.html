@@ -32,6 +32,9 @@
 
         html {
             scroll-behavior: smooth;
+            /* Keeps anchor-scroll targets (nav links, hero CTAs) from
+               landing underneath the fixed nav. */
+            scroll-padding-top: 88px;
         }
 
         body {
@@ -467,6 +470,12 @@
         }
 
         /* PROJECTS */
+        #projects {
+            background: var(--bg2);
+            border-radius: 24px;
+            margin: 0 1.5rem 3rem;
+        }
+
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -654,6 +663,7 @@
 
             html {
                 font-size: 15px;
+                scroll-padding-top: 70px;
             }
 
             nav {
@@ -905,7 +915,7 @@
     </section>
 
     <!-- PROJECTS -->
-    <section id="projects" style="background: var(--bg2); border-radius: 24px; margin: 0 1.5rem 3rem;">
+    <section id="projects">
         <p class="section-label">What I've built</p>
         <h2 class="section-title">Projects</h2>
         <div class="projects-grid">
@@ -1001,8 +1011,7 @@
     </section>
 
     <!-- CONTACT -->
-    <div id="contact"
-        style="max-width:700px; background: var(--card); border-radius: 24px; border: 1px solid var(--border); text-align: center; padding: 5rem 3rem; margin: 0 auto 5rem;">
+    <div id="contact">
         <p class="section-label">Say hello</p>
         <h2 class="section-title" style="margin-bottom: 1rem;">Let's Work Together</h2>
         <p style="font-size:1rem; color:var(--muted); line-height:1.75; margin-bottom:2.5rem; font-weight:300;">
